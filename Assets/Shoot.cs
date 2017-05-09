@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShootAtThis : MonoBehaviour {
+public class Shoot : MonoBehaviour {
 
 
     public Transform shootObject;
@@ -9,7 +9,8 @@ public class ShootAtThis : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		if (shootObject == null)
+			shootObject = transform;
 	}
 	
 	// Update is called once per frame
