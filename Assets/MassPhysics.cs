@@ -27,9 +27,9 @@ public class MassPhysics : MonoBehaviour {
                     child.GetComponent<MeshRenderer>().material = opticalMaterial;
                 child.transform.parent = transform.parent;
                 child.transform.position = new Vector3(
-                                            Random.RandomRange(-20f, 20f),
-                                            Random.RandomRange(10f, 20f),
-                                            Random.RandomRange(-20f, 20f));
+                                            Random.Range(-20f, 20f),
+                                            Random.Range(10f, 20f),
+                                            Random.Range(-20f, 20f));
                 child.AddComponent<Rigidbody>().useGravity = true;
                 child.GetComponent<SphereCollider>().material = physicalMaterial;
             }

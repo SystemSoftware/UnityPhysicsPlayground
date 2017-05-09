@@ -17,8 +17,6 @@ public class ShootAtThis : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && shootObject != null)
         {
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            //if (GetComponent<Collider>().Raycast(ray, out hit, float.MaxValue))
             if (Input.GetKey(KeyCode.LeftAlt))
             {
                 //markerObject.position = ray.GetPoint(rayDistance);

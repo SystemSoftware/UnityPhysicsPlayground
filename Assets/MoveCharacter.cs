@@ -9,7 +9,7 @@ public class MoveCharacter : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         Vector3 speed = Vector3.zero;
 
         if (Input.GetKey(KeyCode.D))

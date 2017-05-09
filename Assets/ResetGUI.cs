@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ResetGUI : MonoBehaviour {
 
@@ -11,7 +12,7 @@ public class ResetGUI : MonoBehaviour {
     void OnGUI ()
     {
         if (GUI.Button(new Rect(20, 40, 80, 20), "Reset"))
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(0);
         int i = 3;
         GUI.color = Color.black;
         GUI.Label(new Rect(20, (i++)*20, 260, 20), "Alt+Click: fire sphere");
